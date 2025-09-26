@@ -1,0 +1,38 @@
+{
+  "name": "mismo-imapd",
+  "version": "0.0.4",
+  "description": "IMAP Server module for the Mismo Messaging System",
+  "main": "index.js",
+  "author": "TJ Easter <sixserpents@protonmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tjeaster81/mismo-imapd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tjeaster81/mismo-imapd/issues",
+    "email": "sixserpents@protonmail.com"
+  },
+  "keywords": [
+	"mismo", "mismo messaging system",
+    "imap",
+    "server",
+    "email"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "imap-parser": ">= 0.0.1"
+  },
+  "devDependencies": {
+    "coffee-script": "1.6.x"
+  },
+  "scripts": {
+    "prepublish": "coffee -c ./lib/ ./plugins/ ./util/"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "homepage": "https://github.com/tjeaster81/mismo-imapd#readme",
+  "directories": {
+    "lib": "lib"
+  }
+}
